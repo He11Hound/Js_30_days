@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let string = "«30 дней JavaScript»";//1
+        console.log(string);//2
+        console.log(string.length);//3
+        console.log(string.toUpperCase());//4
+        console.log(string.toLowerCase());//5
+        console.log(string.substr(3,4));//6
+        let engString = "30 Days Of JavaScript";
+        console.log(engString.substr(3,5) + engString.substring(8,11) + engString.substr(-10))//7
+        console.log(engString.includes("Script"))//8 ну как часть слов, а так  можно пробелами false сделать
+        console.log(engString.split(" ")); //9
+        console.log(engString.split("")); //10
+        let companies = "«Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon»";
+        let arrOfCompanies = companies.split(", ");
+        console.log(arrOfCompanies); //11
+        console.log(engString.replace("JavaScript", "Python")); //12
+        console.log(engString.charAt(15)); //13
+        console.log(engString.charCodeAt(engString.search("J"))); //14
+        console.log(engString.indexOf(3));//15
+        console.log(engString.lastIndexOf("t"));//16
+        why = "«Вы не можете закончить предложение, потому что, потому что, потому что это соединение»";
+        console.log(why.indexOf("потому что"));//17
+        console.log(why.lastIndexOf("потому что"));//18
+        console.log(why.search("потому что"));//19
+        console.log(engString.trim());//20
+        console.log(engString.startsWith(30));//21
+        console.log(engString.endsWith("JavaScript"));//22
+        console.log(engString.match(/a/gi));//23
+        let newStr = "30 Days";
+        console.log(newStr.concat(" Of ", "JavaScript"));//24
+        console.log(engString.repeat(2));//25
+    </script>
+</head>
+<body>
+</body>
+</html>
