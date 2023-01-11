@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // №1
+        let age = prompt("Введите свой возраст", "сюдааааа");
+        console.log(age)
+
+        switch(true)
+        {
+            case(age < 18):
+            let difference = 18 - age;
+                console.log(`Вам ${age}, Вам будет разрешено водить через ${difference} года`)
+            break;
+            default: console.log(`Вам ${age}, Вы достаточно взрослый, чтобы водить`)
+        }
+        //end
+
+        //№2
+        let yourAge = prompt("Enter your age:", "right here");
+        let myAge = 21;
+
+        if(myAge == yourAge)
+            console.log("We have the same age");
+        else if(myAge > yourAge)
+            console.log("I'm older than u");
+        else console.log("Y'r too older than me")
+        //end
+
+        //№3
+        let a = 7;
+        let b = 13;
+
+        if(a>b) console.log("a>b");
+        else console.log("b>a");
+
+        a>b?console.log("a>b"):console.log("b>a");
+        //end
+
+        //№4
+        let number = prompt("Введите число");
+        number % 2 == 0? console.log(`${number} - четное число`): console.log(`${number} - нечетное число`);
+        //end
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

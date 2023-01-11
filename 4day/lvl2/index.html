@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //№1
+        let grade = 54;
+        switch(true)
+        {
+            case(grade>= 80 && grade <= 100):
+                console.log("A");
+            break;
+
+            case(grade>=70 && grade <= 79):
+                console.log("B");
+            break;
+
+            case(grade>= 60 && grade <= 69):
+                console.log("C");
+            break;
+
+            case(grade>=50 && grade <=59):
+                console.log("D");
+            break;
+
+            default: console.log("F");
+        }
+        //end
+
+        //№2
+        let season = "октябрь";
+        
+        switch(true)
+        {
+            case(season =="январь" || season =="февраль" || season =="декабрь"):
+                console.log("Сейчас зима");
+            break;
+
+            case(season =="март" || season =="апрель" || season =="май"):
+                console.log("Сейчас весна");
+            break;
+
+            case(season =="июнь" || season =="июль" || season =="август"):
+                console.log("Сейчас лето");
+            break;
+
+            case(season =="сентябрь" || season =="октябрь" || season =="ноябрь"):
+                console.log("Сейчас осень");
+            break;
+        }
+        //end
+
+        //№3
+        let day = prompt("Введите сегодняшний день");
+        switch(true)
+        {
+            case(day.toLowerCase() == "суббота"):
+                console.log("Суббота - выходной");
+            break;
+
+            case(day.toLowerCase() == "воскресенье"):
+                console.log("Воскресенье - выходной");
+            break;
+
+            default: console.log(`${day} - рабочий день`)
+        }
+        //end
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
