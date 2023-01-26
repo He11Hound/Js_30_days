@@ -51,18 +51,65 @@
         console.log(newArrIt);
 
         //№12
-        console.log(itCompanies.toString());
+        console.log(itCompanies.toString() + " Являются крупными It-компаниями");
+
         //№13
-        //№14
+        function findComp(comp){
+            if(itCompanies.includes(comp)) return comp;
+            else return "такой компании нет";
+        };
+        console.log(findComp("Яндекс"));
+        console.log(findComp("Microsoft"));
+
+        //№14 сделал через фильтр
+        
+            let newArrOO = itCompanies.map(function(elem){
+                let arr = elem.split("");
+                let result = arr.filter(function(elem){
+                    if(elem == "o") return true;
+                });
+                if(result.length >= 2) return elem;
+            });
+            console.log(newArrOO);
+        
+
         //№15
+        //console.log(itCompanies.sort());
+
         //№16
+        //console.log(itCompanies.reverse());
+
         //№17
+        // itCompanies.shift();
+        // itCompanies.shift();
+        // itCompanies.shift();
+        // console.log(itCompanies);
+
         //№18
+        // itCompanies.pop();
+        // itCompanies.pop();
+        // itCompanies.pop();
+        // console.log(itCompanies);
+
         //№19
+        // itCompanies.splice(Math.round((itCompanies.length / 2) - 1), 1);
+        // console.log(itCompanies);
+
         //№20
+        // itCompanies.shift();
+        // console.log(itCompanies);
+
         //№21
+        // itCompanies.splice(Math.round((itCompanies.length / 2) - 1), 1);
+        // console.log(itCompanies);
+
         //№22
+        // itCompanies.pop();
+        // console.log(itCompanies);
+
         //№23
+        // itCompanies = [];
+        // console.log(itCompanies)
 
 
     </script>

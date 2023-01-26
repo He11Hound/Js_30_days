@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+        ages.sort();
+        let minAges = ages[0];
+        let maxAges = ages[ages.length - 1];
+
+        console.log(minAges, maxAges);
+        
+        let result = ages.reduce(function(sum, elem){
+            return sum + elem;
+        })
+        let average = result/ages.length;
+        console.log(average);
+
+        console.log(maxAges - minAges);
+
+        console.log(Math.abs(minAges - average))
+        console.log(Math.abs(maxAges - average))
+
+        //дальше задания легче
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
