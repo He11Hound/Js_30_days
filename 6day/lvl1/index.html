@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //№1
+            // for(let i = 0; i <= 10; i++){
+            //     console.log(i);
+            // }
+            // let i = 0;
+            // while(i<=10){
+            //     console.log(i);
+            //     i++;
+            // }
+            // do{
+            //     console.log(i);
+            //     i++;
+            // } while(i<=10)
+
+        //№2
+            // for(let i = 10; i >= 0; i--){
+            //     console.log(i);
+            // }
+            // let i = 10;
+            // while(i>=0){
+            //     console.log(i);
+            //     i--;
+            // }
+            // do{
+            //     console.log(i);
+            //     i--;
+            // } while(i>=0)
+
+        //№3
+            // function writeNumber(n){
+            //     for(let i = 0; i >= n; i++){
+            //         console.log(i);
+            //     }
+            // }
+        //№4
+            // let sign = "#"; 
+            // for(let i = 0; i < 7; i++){
+            //     console.log(sign);
+            //     sign += "#";
+            // }
+        //№5
+            // for(let i = 0; i <= 10; i++){
+            //         console.log(`${i} * ${i} = `+ (i*i));
+            //     }
+        //№6
+        for(let i = 0; i <= 10; i++){
+                console.log(`${i} ${i*i} ${i*i*i}`);
+            }
+        //№7
+            // for(let i = 0; i <= 100; i++){
+            //     if(i%2 == 0)
+            //         console.log(i);
+            //     }
+        //№8
+            // for(let i = 0; i <= 100; i++){
+            //     if(!(i%2 == 0))
+            //         console.log(i);
+            //     }
+        //№9
+            // nextPrime:
+            //     for (var i = 2; i <= 100; i++) {
+            //         for (var j = 2; j < i; j++) {
+            //             if (i % j == 0) continue nextPrime;
+            //         }
+            //         console.log(i);
+            //     }
+        //№10
+            let sum = 0
+            for(let i = 0; i <= 100; i++){
+                sum+=i;
+            }
+            console.log(sum)
+        //№11
+        let sumEvens = 0;
+        let sumOdds = 0
+            for(let i = 0; i <= 100; i++){
+                if(i %2 == 0) sumEvens+=i;
+                else sumOdds+=i;
+            }
+            console.log(sumEvens, sumOdds)
+        //№12
+        console.log([sumEvens, sumOdds])
+        //№13
+        let arr = [];
+        for(let i = 0; i < 5; i++){
+            arr.push(Math.round(Math.random() * 10));
+        }
+        console.log(arr);
+        //№14 ???
+
+        //№15
+        let stringSymbol = "abcdefghijklmnopqrstuvwxyz0123456789"
+        let arrSymbol = stringSymbol.split("");
+        
+        let arrResult = [];
+        
+        function getRandomString(count){
+            for(let i = 0; i<count; i++){
+                randomIndex = Math.round(Math.random() * arrSymbol.length);
+                arrResult.push(arrSymbol[randomIndex]);
+            }
+            console.log(arrResult.join(""))
+        }
+        getRandomString(6);
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

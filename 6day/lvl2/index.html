@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //№1
+        let stringSymbol = "abcdefghijklmnopqrstuvwxyz0123456789"
+        let arrSymbol = stringSymbol.split("");
+        
+        let arrResult = [];
+        
+        function getRandomString(count){
+            for(let i = 0; i<count; i++){
+                randomIndex = Math.round(Math.random() * arrSymbol.length);
+                arrResult.push(arrSymbol[randomIndex]);
+            }
+            console.log(arrResult.join(""))
+        }
+        getRandomString(6);
+
+        //№2 впадлу + 16чное
+
+        //№3
+        let rgb = [];
+        for(let i = 0; i<3; i++){
+                randomNumber = Math.round(Math.random() * 255);
+                rgb.push(randomNumber);
+            }
+        string = rgb.join(",");
+        console.log("(" + string + ")")
+
+        //№4
+        const countries = [
+            "Albania",
+            "Bolivia",
+            "Canada",
+            "Denmark",
+            "Ethiopia",
+            "Finland",
+            "Germany",
+            "Hungary",
+            "Ireland",
+            "Japan",
+            "Kenya"
+            ];
+
+        let newArrCountries = countries.map(function(element){
+            return element.toUpperCase();
+        })
+        console.log(newArrCountries)
+
+        //№5
+        let newArrCountriesLength = countries.map(function(element){
+            return element.length;
+        })
+        console.log(newArrCountriesLength)
+
+        //№6
+        let newArrCountriesInfo = countries.map(function(element){
+            return [element, element.toUpperCase().substr(0, 3), element.length];
+        })
+        console.log(newArrCountriesInfo)
+
+        //№7
+        let seven = countries.map(function(elem){
+            if(elem.includes('land')) return elem
+        });
+
+        let notSeven = countries.map(function(elem){
+            if(!elem.includes('land')) return elem
+        });
+
+        console.log(seven);
+        console.log(notSeven);
+
+        //№8
+        let ia = countries.map(function(elem){
+            if(elem.includes('ia')) return elem
+        });
+
+        let notIa = countries.map(function(elem){
+            if(!elem.includes('ia')) return elem
+        });
+        console.log(ia);
+        console.log(notIa);
+
+        //№9
+        let longestWord = "";
+        
+        for(let i = 0; i < countries.length;i++){
+            if(countries[i].length > longestWord.length)longestWord = countries[i];
+        }
+        console.log(longestWord);
+
+        //№10
+        let arrCountFive = [];
+        
+        for(let i = 0; i < countries.length;i++){
+            if(countries[i].length == 5)arrCountFive.push(countries[i]);
+        }
+        console.log(arrCountFive);
+
+        //№11
+        const webTechs = [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Redux",
+        "Node",
+        "MongoDB"
+        ];
+
+        let newLongestWord = "";
+        
+        for(let i = 0; i < webTechs.length;i++){
+            if(webTechs[i].length > newLongestWord.length)newLongestWord = webTechs[i];
+        }
+        console.log(newLongestWord);
+
+        //№12
+        let newArrTech = [];
+        for(let i = 0; i < webTechs.length;i++){
+            newArrTech.push([webTechs[i],webTechs[i].length])
+        }
+        console.log(newArrTech);
+
+        //№13
+        let abbreviation = "";
+        let arrOfWords = ["MongoDB","Express","React","Node"]
+
+        for(let i = 0; i < arrOfWords.length;i++){
+            abbreviation += arrOfWords[i][0]
+        }
+        console.log(abbreviation);
+
+        //№14
+        for(let i = 0; i < webTechs.length;i++){
+            console.log(webTechs[i])
+        }
+
+        //№15
+        let arrOfFruit =['banana', 'orange', 'mango', 'lemon'];
+        let reverseArrOfFruit =[];
+        for(let i = arrOfFruit.length - 1; i >= 0; i--){
+            reverseArrOfFruit.push(arrOfFruit[i]);
+        }
+        console.log(reverseArrOfFruit)
+
+        //№16
+        const fullStack = [
+        ["HTML", "CSS", "JS", "React"],
+        ["Node", "Express", "MongoDB"]
+        ];
+
+        for(let i = 0; i < fullStack.length; i++){
+            for(let j = 0; j < fullStack[i].length; j++){
+                console.log(fullStack[i][j]);
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
